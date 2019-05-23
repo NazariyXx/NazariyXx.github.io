@@ -1,0 +1,238 @@
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+a:hover {
+  text-decoration: none;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+a:active, a:focus {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 0;
+}
+
+ul, li, ul > li {
+  list-style-type: none;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+button {
+  background: none;
+  border: none;
+}
+button:active, button:focus {
+  outline: none;
+}
+button:hover {
+  cursor: pointer;
+}
+
+input, input:hover, input:active {
+  outline: none;
+}
+
+input[type="button"], input[type="submit"] {
+  cursor: pointer;
+  background: transparent;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+// STYLES
+body {
+	background-color: #daecff;
+}
+
+.portfolio {
+	&__head {
+		text-align: center;
+	}
+	&__headline {
+		padding-top: 40px;
+		font-size: 48px;
+		font-weight: bold;
+	}
+	&__description {
+		font-size: 38px;
+	}
+	&__contacts {
+		margin-top: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.item {
+			font-size: 38px;
+			&:not(:last-child) {
+				margin-right: 15px;
+			}
+		}
+		a {
+			padding: 10px;
+		    background: #fff;
+		    display: flex;
+		    border-radius: 50%;
+		}
+		.linkedin a {
+			color: #0077b5;
+		}
+		.viber a {
+			background: #7D3DAF;
+			color: #fff;
+		}
+		.phone a {
+			color: #4DA3FF;
+		}
+		.instagram a {
+			color: #fff;
+			background: #fdf497; 
+			background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	    }	
+	}
+	&__layouts {
+		margin-bottom: 40px;
+		text-align: center;
+		h3 {
+			font-size: 32px;
+		}
+	}
+	&__pages {
+		margin-top: 80px;
+	}
+	&__page {
+		.item {
+			padding: 50px 0;
+			text-align: center;
+			border-radius: 10px;
+			a {
+				font-size: 32px;
+				&:first-child {
+					font-size: 40px;
+				}
+			}
+		}
+		&--smart-city {
+			.item {
+				background: #6F70DA;
+				a {
+					color: #fff;
+				}
+			}
+		}
+		&--shopy {
+			.item {
+				background: #f4f6f8;
+				a {
+					color: #FF6F13;
+				}
+			}
+		}
+		&--aurora {
+			.item {
+				background: #CB1A8A;
+				a {
+					color: #fff;
+				}
+			}
+		}
+		&--smartapp {
+			.item {
+				background: #fff;
+				a {
+					color: #5dca88;
+				}
+			}
+		}
+	}
+	&__react {
+		padding-bottom: 60px;
+	}
+	&__react-apps {
+		margin-top: 40px;
+		margin-bottom: 40px;
+		text-align: center;
+		h3 {
+			font-size: 32px;
+		}
+	}
+	&__app {
+		.item {
+			padding: 50px 0;
+			text-align: center;
+			border-radius: 10px;
+			a, span {
+				font-size: 32px;
+				&:first-child {
+					font-size: 40px;
+				}
+			}
+		}
+		&--counter {
+			.item {
+				background: #faf5e2;
+				a, span {
+					color: #000;
+				}
+			}
+		}
+		&--calculator {
+			.item {
+				background: #DBDEE0;
+				a, span {
+					color: #178FD6;
+				}
+			}
+		}
+		&--weather {
+			.item {
+				background: #2D71D9;
+				a, span {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 991px) {
+	.portfolio {
+		&__pages {
+			margin-bottom: -30px;
+		}
+		&__page {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.portfolio {
+		&__react {
+			margin-bottom: -30px;
+		}
+		&__app {
+			margin-bottom: 30px;
+		}
+	}
+}

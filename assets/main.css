@@ -1,0 +1,225 @@
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+a:active, a:focus {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 0;
+}
+
+ul, li, ul > li {
+  list-style-type: none;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+button:active, button:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input, input:hover, input:active {
+  outline: none;
+}
+
+input[type="button"], input[type="submit"] {
+  cursor: pointer;
+  background: transparent;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+body {
+  background-color: #daecff;
+}
+
+.portfolio__head {
+  text-align: center;
+}
+.portfolio__headline {
+  padding-top: 40px;
+  font-size: 48px;
+  font-weight: bold;
+}
+.portfolio__description {
+  font-size: 38px;
+}
+.portfolio__contacts {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.portfolio__contacts .item {
+  font-size: 38px;
+}
+.portfolio__contacts .item:not(:last-child) {
+  margin-right: 15px;
+}
+.portfolio__contacts a {
+  padding: 10px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+}
+.portfolio__contacts .linkedin a {
+  color: #0077b5;
+}
+.portfolio__contacts .viber a {
+  background: #7D3DAF;
+  color: #fff;
+}
+.portfolio__contacts .phone a {
+  color: #4DA3FF;
+}
+.portfolio__contacts .instagram a {
+  color: #fff;
+  background: #fdf497;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.portfolio__layouts {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.portfolio__layouts h3 {
+  font-size: 32px;
+}
+.portfolio__pages {
+  margin-top: 80px;
+}
+.portfolio__page .item {
+  padding: 50px 0;
+  text-align: center;
+  border-radius: 10px;
+}
+.portfolio__page .item a {
+  font-size: 32px;
+}
+.portfolio__page .item a:first-child {
+  font-size: 40px;
+}
+.portfolio__page--smart-city .item {
+  background: #6F70DA;
+}
+.portfolio__page--smart-city .item a {
+  color: #fff;
+}
+.portfolio__page--shopy .item {
+  background: #f4f6f8;
+}
+.portfolio__page--shopy .item a {
+  color: #FF6F13;
+}
+.portfolio__page--aurora .item {
+  background: #CB1A8A;
+}
+.portfolio__page--aurora .item a {
+  color: #fff;
+}
+.portfolio__page--smartapp .item {
+  background: #fff;
+}
+.portfolio__page--smartapp .item a {
+  color: #5dca88;
+}
+.portfolio__react {
+  padding-bottom: 60px;
+}
+.portfolio__react-apps {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.portfolio__react-apps h3 {
+  font-size: 32px;
+}
+.portfolio__app .item {
+  padding: 50px 0;
+  text-align: center;
+  border-radius: 10px;
+}
+.portfolio__app .item a, .portfolio__app .item span {
+  font-size: 32px;
+}
+.portfolio__app .item a:first-child, .portfolio__app .item span:first-child {
+  font-size: 40px;
+}
+.portfolio__app--counter .item {
+  background: #faf5e2;
+}
+.portfolio__app--counter .item a, .portfolio__app--counter .item span {
+  color: #000;
+}
+.portfolio__app--calculator .item {
+  background: #DBDEE0;
+}
+.portfolio__app--calculator .item a, .portfolio__app--calculator .item span {
+  color: #178FD6;
+}
+.portfolio__app--weather .item {
+  background: #2D71D9;
+}
+.portfolio__app--weather .item a, .portfolio__app--weather .item span {
+  color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .portfolio__pages {
+    margin-bottom: -30px;
+  }
+  .portfolio__page {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio__react {
+    margin-bottom: -30px;
+  }
+  .portfolio__app {
+    margin-bottom: 30px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
